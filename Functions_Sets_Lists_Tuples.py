@@ -34,7 +34,7 @@ SetA = Set(['Karthik','Dhanu','Iyal','Iyal'])
 SetB = Set(['Chicago','Minneapolis','Dallas'])
 SetC = SetA.union(SetB)
 
-print SetC #one 'Iyal' is de-duped
+print(SetC) #one 'Iyal' is de-duped
 
 # Lists
 ListA = [0, 4, 8]
@@ -42,25 +42,24 @@ ListB = [1, 3, 6]
 ListA.extend(ListB)
 ListA.append(6)
 
-print ListA
-print ListA[1:4]
+print(ListA[1:4])
 
 # List May contain Duplicate Entrees
 
 # Tuples -- create complex Lists (Lists are mutable tuples are not)
 SampTup = (1,2,3,(4,5,6,(7,8,9)))
 
-print SampTup
+print(SampTup)
 
 # Print Tuple in Levels (Hierarchy)
 for Val1 in SampTup:
     if type(Val1) == int: #type to identify the data type of an element
-        print Val1
+        print(Val1)
     else:
         for Val2 in Val1:
             if type(Val2) == int:
-                print "\t", Val2
+                print("\t", Val2)
             else:
                 for Val3 in Val2:
-                    print "\t\t", Val3
+                    print("\t\t", Val3)
 
